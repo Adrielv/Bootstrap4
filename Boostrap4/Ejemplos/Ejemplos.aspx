@@ -258,20 +258,19 @@
   </div>
 </div>
     </br>
+     </br>
+       </br>
+     </br>
     
 <div class="container">
   <h2>Card Group</h2>
-  <p>The .card-group class is similar to .card-deck, which creates an <strong>equal height and width</strong> grid of cards.</p>
-  <p>However, the .card-group class removes left and right margins between each card.</p>
-  <p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
+ 
   <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px), <strong>WITH</strong> top and bottom margin:</p>
   <div class="card-group">
     <div class="card bg-primary">
       <div class="card-body text-center">
         <p class="card-text">Some text inside the first card</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
+   
       </div>
     </div>
     <div class="card bg-warning">
@@ -291,7 +290,245 @@
     </div>  
   </div>
 </div>
+      </br>
+    <div class="container">
+  <h2>Dropdowns</h2>
+  <p>Un DropDown</p>
+                                        
+  <div class="dropdown">
+     <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+       </br>
+    <div class="container">
+  <h2>Simple Collapsible</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  </div>
+</div>
+     </br>
+    <div class="container">
+  <h2>Navigation Tabs</h2>
+  <p>Turn the nav menu into navigation tabs with the .nav nav-tabs class. Add the active class to the active/current link. If you want the tabs to be togglable, see the last example on the tutorial page.</p>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</div>
+     </br>
+    
+<div class="container">
+  <h3> Navbar de colores</h3>
+  
+</div>
 
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+    
+     </br>
+    <div class="container">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+      </br>
+
+    <div class="container">
+  <h2>Form control: checkbox</h2>
+  <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <label class="form-check-label" for="check1">
+        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Option 1
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Option 2
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" disabled>Option 3
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+     </br>
+    
+<div class="container">
+  <h2>Form control: radio buttons</h2>
+  <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <label class="form-check-label" for="radio1">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" disabled>Option 3
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+     </br>
+
+    <div class="container">
+  <h2>Form Control Range and File</h2>
+  
+  <form action="/action_page.php">
+    <div class="form-group">
+      <input type="range" class="form-control-range" name="range">
+    </div>
+    <div class="form-group">
+      <input type="file" class="form-control-file border" name="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+     </br>
+    <div class="container mt-3">
+  <h3>Multiple Inputs and Addons</h3>
+  
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Person</span>
+      </div>
+      <input type="text" class="form-control" placeholder="First Name">
+      <input type="text" class="form-control" placeholder="Last Name">
+    </div>  
+  </form>
+  
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">One</span>
+        <span class="input-group-text">Two</span>
+        <span class="input-group-text">Three</span>
+      </div>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+</div>
+    </br>
+    <div class="container mt-3">
+  <h2>Custom Checkbox</h2>
+  <p>To create a custom checkbox, wrap a container element, like div, with a class of .custom-control and .custom-checkbox around the checkbox. Then add the .custom-control-input to the checkbox.</p>
+  <p><strong>Tip:</strong> If you use labels for accompanying text, add the .custom-control-label class to it. Note that the value of the for attribute should match the id of the checkbox:</p>
+  <form action="/action_page.php">
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+      <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+    </div>
+    <input type="checkbox" id="defaultCheck" name="example2">
+    <label for="defaultCheck">Default checkbox</label>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+    </br>
+    <div class="container mt-3">
+  <h2>Custom Range</h2>
+  <p>To create a custom range menu, add the .custom-range class to the input element with type="range":</p>
+  <form action="/action_page.php">
+    <label for="customRange">Custom range</label>
+    <input type="range" class="custom-range" id="customRange" name="points1">
+    <label for="defaultRange">Default range</label>
+    <input type="range" id="defaultRange" name="points2">
+    <p><button type="submit" class="btn btn-primary">Submit</button></p>
+  </form>
+</div>
 
 </body>
 </html>
