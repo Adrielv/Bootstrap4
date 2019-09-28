@@ -24,9 +24,19 @@
 </div>
 
     <div class="row">
-  <div class="col-sm-4">.col-sm-4</div>
-  <div class="col-sm-8">.col-sm-8</div>
+  <div class="col-sm-6">.col-sm-6</div>
+  <div class="col-sm-6">.col-sm-6</div>
 </div>
+    </br>
+    <div class="container">
+  <h1>Agregando titulos</h1>
+</br>
+  <h1 class="display-1"><mark>Adriel</mark></h1>
+  <h1 class="display-2"><abbr title="World Health Organization">Villar</abbr></h1>
+  <h1 class="display-3"><dt>2015</dt></h1>
+  <h1 class="display-4"><code>0745</code></h1>
+</div>
+
 
 </body>
 </html>
