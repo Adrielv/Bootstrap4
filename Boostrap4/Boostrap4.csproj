@@ -67,17 +67,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ejemplos\EjemploIcons.aspx" />
     <Content Include="Ejemplos\Ejemplos.aspx" />
+    <Content Include="Ejemplos\Ejemplos2.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejemplos\EjemploIcons.aspx.cs">
+      <DependentUpon>EjemploIcons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejemplos\EjemploIcons.aspx.designer.cs">
+      <DependentUpon>EjemploIcons.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ejemplos\Ejemplos.aspx.cs">
       <DependentUpon>Ejemplos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ejemplos\Ejemplos.aspx.designer.cs">
       <DependentUpon>Ejemplos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejemplos\Ejemplos2.aspx.cs">
+      <DependentUpon>Ejemplos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejemplos\Ejemplos2.aspx.designer.cs">
+      <DependentUpon>Ejemplos2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

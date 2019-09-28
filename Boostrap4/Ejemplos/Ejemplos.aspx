@@ -3,13 +3,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Bootstrap 4 Adriel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <style>
+  .border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+  }
+  </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -176,7 +184,7 @@
 </div>
      </br>
     <div class="container">
-  <h2>Animated Progress Bar</h2>
+  <h2>Barras animadas</h2>
 
   <div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
@@ -185,7 +193,7 @@
      </br>
     <div class="container">
   <h2>Colored Spinners</h2>
-  <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
+ 
                                         
   <div class="spinner-border text-muted"></div>
   <div class="spinner-border text-primary"></div>
@@ -640,6 +648,112 @@ $(document).ready(function(){
     });
 </script>
     </br >
+    <div class="container">
+  <h2>Borders</h2>
+  <p>Use a contextual border color to add a color to the border:</p> 
+  <span class="border border-primary"></span>
+  <span class="border border-secondary"></span>
+  <span class="border border-success"></span>
+  <span class="border border-danger"></span>
+  <span class="border border-warning"></span>
+  <span class="border border-info"></span>
+  <span class="border border-light"></span>
+  <span class="border border-dark"></span>
+  <span class="border border-white"></span>
+</div>
+     </br >
+    <div class="container">
+  <h1>Width Utilities</h1>
+  <p>Set the width of an element with the w-* classes:</p>
+  <div class="w-25 bg-warning">Width 25%</div>
+  <div class="w-50 bg-warning">Width 50%</div>
+  <div class="w-75 bg-warning">Width 75%</div>
+  <div class="w-100 bg-warning">Width 100%</div>
+  <div class="mw-100 bg-warning">Max Width 100%</div>
+</div>
+    </br>
+    <div class="container mt-3">
+  <h2>Flex</h2>
+  <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+  <div class="d-flex p-3 bg-secondary text-white">  
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+</div>
+     </br>
 
+    <div class="container mt-3">
+  <h2>Nested Media Objects</h2>
+  <p>Media objects can also be nested (a media object inside a media object):</p><br>
+  <div class="media border p-3">
+    <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="media p-3">
+        <img src="img_avatar2.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+        <div class="media-body">
+          <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+     </br>
+
+    <div class="container mt-3">
+  <h2>Filterable Table</h2>
+  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
 </body>
 </html>
