@@ -41,7 +41,7 @@
     <div class="container">
   <h2>Basic Table</h2>
   <p>Un Table</p>            
-  <table class="table">
+  <table class="table table-striped">
     <thead>
       <tr>
         <th>PrimerNombre</th>
@@ -68,6 +68,106 @@
     </tbody>
   </table>
 </div>
+     </br>
+    <div class="container">
+  <h2>Rounded Corners</h2>
+  <p>Una imagen:</p>            
+  <img src="Mue.jpg" class="rounded" alt="Cinque Terre" width="304" height="236"> 
+</div>
+
+ <div class="container">
+  <h2>Centered Image</h2>
+  <p>Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:</p> 
+  <img src="paris.jpg" class="mx-auto d-block" style="width:50%"> 
+</div>
+    </br>
+    <div class="container">
+  <div class="jumbotron">
+    <h1>Bootstrap Tutoriales</h1>      
+    <p></p>
+  </div>
+  <p>aki se puede poner texto</p>      
+  <p>This is another text.</p>      
+</div>
+
+     </br>
+
+    <div class="container">
+  <h2>Alertas</h2>
+  <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> Indicates a slightly less important action.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> Dark grey alert.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> Light grey alert.
+  </div>
+</div>
+
+    </br>
+
+
+    <div class="container">
+  <h2>Los botones</h2>
+  <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+  <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+  <button type="button" class="btn btn-outline-success btn-block">Success</button>
+  <button type="button" class="btn btn-outline-info spinner-border-sm">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+    </br>
+    <div class="btn-group-vertical">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
+     </br>
+    <div class="container">
+  <h2>Split Buttons</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Sony</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Smartphone</a>
+    </div>
+  </div>
+</div>
+     </br>
+    <div class="container">
+  <h2>Contextual Badges</h2>
+  <span class="badge badge-primary">Primary</span>
+  <span class="badge badge-secondary">Secondary</span>
+  <span class="badge badge-success">Success</span>
+  <span class="badge badge-danger">Danger</span>
+  <span class="badge badge-warning">Warning</span>
+  <span class="badge badge-info">Info</span>
+  <span class="badge badge-light">Light</span>
+  <span class="badge badge-dark">Dark</span>
+</div>
+
 
 </body>
 </html>
